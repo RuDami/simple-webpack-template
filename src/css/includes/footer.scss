@@ -1,0 +1,152 @@
+@import '../global/variables';
+
+footer {
+  margin-top: 30px;
+  @media screen and (min-width: 768px) {
+    margin-top: 40px;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+
+    &-title {
+      color: $black;
+      font-size: 25px;
+      font-weight: bold;
+      line-height: 35px;
+    }
+
+    &-wrapper {
+      display: flex;
+      flex-flow: row wrap;
+      margin-top: 30px;
+    }
+
+    &-left {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+
+      .first-block {
+        color: $black;
+        display: flex;
+        flex-direction: column;
+
+        &-title {
+          display: flex;
+          font-size: 16px;
+          font-weight: bold;
+        }
+
+        &-text {
+          display: flex;
+          font-size: 16px;
+          margin-top: 8px;
+        }
+      }
+
+      .second-block {
+        display: flex;
+        flex-flow: row wrap;
+        margin-top: 20px;
+
+        &-item {
+          color: $black;
+          display: flex;
+          flex-direction: column;
+          flex-wrap: wrap;
+          margin-bottom: 20px;
+          width: 33%;
+        }
+
+        &-title {
+          display: flex;
+          font-size: 16px;
+          font-weight: bold;
+        }
+
+        &-text {
+          display: flex;
+          font-size: 16px;
+        }
+      }
+
+      .third-block {
+        color: $black;
+        display: flex;
+        flex-direction: column;
+
+        &-title {
+          display: flex;
+          font-size: 16px;
+          font-weight: bold;
+        }
+
+        &-text {
+          display: flex;
+          font-size: 16px;
+          margin-top: 8px;
+        }
+      }
+    }
+
+    &-right {
+      display: flex;
+      flex-flow: row wrap;
+
+      &-item {
+        color: $black;
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+      }
+
+      &-title {
+        display: flex;
+        font-size: 16px;
+        font-weight: bold;
+      }
+
+      &-text {
+        display: flex;
+        font-size: 16px;
+        margin-top: 8px;
+      }
+    }
+
+    &-bottom {
+      border-top: solid 1px #EEE;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin-top: 40px;
+
+      @media screen and (min-width: 768px) {
+        flex-direction: row;
+        margin-top: 150px;
+      }
+
+      &-copyright {
+        display: flex;
+        margin: 27px 20px;
+      }
+
+      &-links {
+        display: flex;
+        flex-direction: column;
+        margin: 0 20px 27px 0;
+        @media screen and (min-width: 768px) {
+          flex-direction: row;
+          margin-top: 27px;
+        }
+
+        a {
+          color: #00578C;
+          display: flex;
+          margin-left: 20px;
+        }
+      }
+    }
+  }
+}

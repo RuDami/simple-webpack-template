@@ -1,0 +1,13 @@
+@import "../variables";
+
+.header-nav {
+  display: flex;
+  gap: 32px;
+
+  font-size: $font-base-size;
+  line-height: $font-base-line-height;
+  text-decoration: none;
+  list-style: none;
+
+
+}

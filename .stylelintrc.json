@@ -1,0 +1,19 @@
+{
+  "plugins": [
+    "stylelint-scss"
+  ],
+  "extends": [
+    "stylelint-config-standard",
+    "stylelint-config-sass-guidelines",
+    "stylelint-config-prettier"
+  ],
+  "rules": {
+    "max-nesting-depth": null,
+    "font-family-no-missing-generic-family-keyword": null,
+    "no-descending-specificity": null,
+    "block-no-empty": null,
+    "no-duplicate-selectors": null,
+    "font-family-no-duplicate-names": null,
+    "selector-class-pattern": null
+  }
+}

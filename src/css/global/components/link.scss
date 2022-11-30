@@ -1,0 +1,29 @@
+@import "../variables";
+
+.link {
+  text-decoration: none;
+  color: $color-olive;
+  font-size: $font-base-size;
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  &:hover {
+    text-decoration: none;
+    color: $color-primary-dark;
+  }
+
+  &-primary {
+    color: $color-primary;
+    &:hover {
+      text-decoration: none;
+      color: $color-primary-dark;
+    }
+  }
+
+  &-arrow {
+    border-bottom: 1px solid transparent;
+    &:hover {
+      border-bottom: 1px solid;
+    }
+  }
+}

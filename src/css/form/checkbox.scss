@@ -1,0 +1,112 @@
+@import '../global/variables';
+
+.checkbox {
+  align-items: center;
+  display: flex;
+  padding: 0 0 10px 8px;
+  position: relative;
+  top: 0;
+  user-select: none;
+
+  @media screen and (min-width: 768px) {
+    padding: 0 0 0 25px;
+  }
+
+  @media screen and (min-width: 1366px) {
+    padding-left: 30px;
+  }
+
+  a {
+    color: $background;
+    text-decoration: none;
+  }
+
+  input {
+    height: 0;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    width: 0;
+    z-index: -1;
+
+    &:checked ~ i {
+      background-color: transparent;
+      border: 1px solid #D7D9DE;
+    }
+
+    &:checked ~ i:before, &:checked ~ i:after {
+      background: $background;
+    }
+
+    &:focus ~ i {
+      box-shadow: 0 0 0 2px rgba(0, 0, 0, .15);
+    }
+
+    &.error ~ i {
+      background: none;
+      border: 2px solid $error;
+    }
+  }
+
+  i {
+    border: 1px solid #D7D9DE;
+    border-radius: 3px;
+    content: '';
+    height: 25px;
+    left: 0;
+    min-width: 25px;
+    position: relative;
+    top: 0;
+    @media screen and (min-width: 768px) {
+      height: 30px;
+      min-width: 30px;
+    }
+
+
+    &:before {
+      background: transparent;
+      content: '';
+      height: 2px;
+      left: 0;
+      position: absolute;
+      top: 14px;
+      transform: rotate(45deg);
+      width: 13px;
+      z-index: 10;
+      @media screen and (min-width: 768px) {
+        left: 3px;
+        top: 17px;
+      }
+    }
+
+    &:after {
+      background: transparent;
+      content: '';
+      height: 2px;
+      left: 7px;
+      position: absolute;
+      top: 12px;
+      transform: rotate(-60deg);
+      width: 18px;
+      z-index: 10;
+      @media screen and (min-width: 768px) {
+        left: 9px;
+        top: 14px;
+      }
+    }
+  }
+
+  div {
+    font-size: 12px;
+    margin-left: 7px;
+    position: relative;
+    @media screen and (min-width: 768px) {
+      font-size: 16px;
+    }
+    @media screen and (min-width: 1024px) {
+      margin-left: 15px;
+    }
+  }
+
+}

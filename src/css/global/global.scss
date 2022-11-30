@@ -1,0 +1,17 @@
+@import '../../fonts/inter';
+@import "bootstrap/scss/bootstrap-reboot";
+@import "variables";
+@import "./components/button";
+@import "./components/nav";
+@import "./components/typography";
+@import "./components/link";
+
+body {
+  color: $color-olive;
+  font-family: $font;
+  margin: 0;
+  font-size: $font-base-size;
+  font-weight: $font-weight-normal;
+  line-height: $font-base-line-height;
+}
+

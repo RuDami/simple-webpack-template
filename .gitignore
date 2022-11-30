@@ -1,0 +1,18 @@
+# Add any directories, files, or patterns you don't want to be tracked by version control
+.idea
+*.zip
+*.js.map
+*.css.map
+*.rar
+*.gz
+*.sql
+license.txt
+readme.html
+web.config
+*.log
+node_modules
+node_modules/
+.htaccess
+package-lock.json
+yarn.lock
+dist

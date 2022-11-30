@@ -1,0 +1,30 @@
+@import "../variables";
+
+h1, .h1 {
+  font-size: $font-h1-size;
+  font-weight: $font-weight-extra-bold;
+  line-height: $font-h1-line-height;
+}
+
+h2, .h2 {
+  font-size: $font-h2-size;
+  font-weight: $font-weight-medium;
+  line-height: $font-h2-line-height;
+}
+h3, .h3 {
+  font-size: $font-h3-size;
+  font-weight: $font-weight-medium;
+  line-height: $font-h3-line-height;
+}
+p {
+  font-size: $font-base-size;
+  font-weight: $font-weight-normal;
+  line-height: $font-base-line-height;
+}
+
+
+article {
+  font-size: $font-text-size;
+  font-weight: $font-weight-normal;
+  line-height: $font-text-line-height;
+}

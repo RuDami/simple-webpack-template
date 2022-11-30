@@ -1,0 +1,66 @@
+
+$color-white: #FFF;
+$color-black: #151515;
+$color-red: #F00;
+
+
+$color-gray: #F6F8FA;
+$color-olive: #0C0C3D;
+
+
+$color-primary: #27ACA1;
+$color-primary-hover: #32BCB1;
+$color-primary-dark: #04665E;
+
+$color-secondary: #DCF6F4;
+
+
+$font-base-size: 18px;
+$font-h1-size: 64px;
+$font-h2-size: 36px;
+$font-text-size: 22px;
+$font-h3-size: 22px;
+
+$font-base-line-height: 28px;
+$font-h1-line-height: 76px;
+$font-h2-line-height: 46px;
+$font-h3-line-height: 32px;
+$font-text-line-height: 36px;
+
+
+$font-weight-thin: 100;
+$font-weight-extra-light: 200;
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-medium: 500;
+$font-weight-semi: 600;
+$font-weight-bold: 700;
+$font-weight-extra-bold: 800;
+$font-weight-black: 900;
+
+
+
+$font: 'Inter' , -apple-system, blinkmacsystemfont, 'Segoe UI', roboto,
+'Helvetica Neue', arial, 'Noto Sans', 'Liberation Sans', sans-serif, 'Apple Color Emoji',
+'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';;
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 1024px,
+  xl: 1366px,
+  xxl: 1600px,
+  xxxl: 1920px
+);
+
+// Grid containers
+$container-max-widths: (
+  xs: 280px,
+  sm: 540px,
+  md: 640px,
+  lg: 820px,
+  xl: 990px,
+  xxl: 1350px,
+  xxxl: 1600px,
+);

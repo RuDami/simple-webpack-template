@@ -1,0 +1,4 @@
+
+<!--        <img src="../../img/logo.svg" alt="">-->
+<!--        <include path="../../img/logo.svg" attributes='{"value": "${name}"}'></include>-->
+<!--        <include path="../blocks/technical-capabilities.html" attributes='{"value": "${name}"}'></include>-->

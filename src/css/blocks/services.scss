@@ -1,0 +1,239 @@
+@import "../global/variables";
+
+.services {
+  color: #151515;
+  font-family: $font;
+  margin-top: 40px;
+  @media (min-width: 768px) {
+    margin-top: 70px;
+  }
+  @media (min-width: 1024px) {
+    margin-top: 80px;
+  }
+  @media (min-width: 1366px) {
+    margin-top: 100px;
+  }
+
+  &-header {
+    &-title {
+      font-size: 25px;
+      font-weight: bold;
+      letter-spacing: 0;
+      line-height: 30px;
+      margin-bottom: 15px;
+      @media (min-width: 768px) {
+        font-size: 30px;
+        line-height: 40px;
+        margin-bottom: 12px;
+      }
+      @media (min-width: 1024px) {
+        font-size: 40px;
+        line-height: 50px;
+        margin-bottom: 20px;
+      }
+      @media (min-width: 1600px) {
+        font-size: 50px;
+        line-height: 60px;
+        margin-bottom: 30px;
+      }
+
+    }
+
+    &-subtitle {
+      font-size: 16px;
+      font-weight: 400;
+      letter-spacing: 0;
+      line-height: 25px;
+      @media (min-width: 1024px) {
+        font-size: 18px;
+        line-height: 30px;
+      }
+      @media (min-width: 1600px) {
+        font-size: 20px;
+        line-height: 32px;
+      }
+
+    }
+  }
+
+  &-block {
+    margin-top: 30px;
+    @media (min-width: 768px) {
+      margin-top: 40px;
+    }
+    @media (min-width: 1366px) {
+      margin-top: 50px;
+    }
+    @media (min-width: 1600px) {
+      margin-top: 70px;
+    }
+
+    &-text {
+      &--number {
+        color: #186366;
+        font-size: 18px;
+        font-weight: 500;
+        letter-spacing: 0;
+        line-height: 30px;
+        @media (min-width: 768px) {
+          font-size: 22px;
+          line-height: 35px;
+        }
+        @media (min-width: 1024px) {
+          font-size: 30px;
+          line-height: 40px;
+        }
+        @media (min-width: 1600px) {
+          font-size: 40px;
+          line-height: 50px;
+        }
+      }
+
+      &--title {
+        font-size: 20px;
+        font-weight: 500;
+        letter-spacing: 0;
+        line-height: 30px;
+        margin-bottom: 12px;
+        @media (min-width: 768px) {
+          font-size: 22px;
+          line-height: 35px;
+        }
+        @media (min-width: 1024px) {
+          font-size: 30px;
+          line-height: 40px;
+          margin-bottom: 20px;
+        }
+        @media (min-width: 1600px) {
+          font-size: 40px;
+          line-height: 50px;
+          margin-bottom: 30px;
+        }
+      }
+
+      &--list {
+        font-size: 14px;
+        letter-spacing: 0;
+        line-height: 22px;
+        list-style: none;
+        padding: 0;
+        @media (min-width: 1024px) {
+          font-size: 16px;
+          line-height: 25px;
+        }
+
+        li {
+          margin-bottom: 12px;
+          padding-left: 35px;
+          position: relative;
+          @media (min-width: 768px) {
+            margin-bottom: 20px;
+            padding-left: 35px;
+          }
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+
+          &::before {
+            border: 3px solid #186366;
+            border-radius: 50%;
+            content: '';
+            height: 15px;
+            left: 0;
+            position: absolute;
+            top: 5px;
+            width: 15px;
+          }
+        }
+      }
+    }
+
+    &-img {
+      img {
+        margin-bottom: 12px;
+        width: 100%;
+        @media (min-width: 768px) {
+          height: 256px;
+          margin-bottom: 20px;
+          width: auto;
+        }
+        @media (min-width: 1366px) {
+          height: auto;
+          margin-bottom: 0;
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  &-download {
+    background-color: #0F4947;
+    margin-top: 40px;
+    padding: 20px;
+    @media (min-width: 768px) {
+      margin-top: 53px;
+      padding: 31px 30px;
+    }
+    @media (min-width: 1024px) {
+      margin-top: 60px;
+    }
+    @media (min-width: 1366px) {
+      margin-top: 80px;
+      padding: 31px 35px;
+    }
+    @media (min-width: 1600px) {
+      margin-top: 150px;
+      padding: 34px 35px;
+    }
+    @media (min-width: 1920px) {
+      margin-top: 100px;
+      padding: 34px 50px;
+    }
+
+    &--text {
+      color: #FFF;
+      font-size: 16px;
+      font-weight: 400;
+      letter-spacing: 0;
+      line-height: 25px;
+      margin-bottom: 18px;
+      @media (min-width: 768px) {
+        font-size: 16px;
+        line-height: 25px;
+      }
+      @media (min-width: 1024px) {
+        font-size: 18px;
+        line-height: 30px;
+      }
+      @media (min-width: 1600px) {
+        font-size: 20px;
+        line-height: 32px;
+      }
+    }
+
+    &--button {
+      background-color: #FFF;
+      border: 0;
+      border-radius: 5px;
+      color: #151515;
+      font-size: 11px;
+      font-weight: 800;
+      height: 40px;
+      letter-spacing: 1px;
+      line-height: 20px;
+      padding: 10px 0;
+      text-align: center;
+      text-transform: uppercase;
+      width: 150px;
+      @media (min-width: 1600px) {
+        font-size: 13px;
+        font-weight: 800;
+        height: 50px;
+        letter-spacing: 2px;
+        padding: 15px 0;
+        width: 185px;
+      }
+    }
+  }
+}

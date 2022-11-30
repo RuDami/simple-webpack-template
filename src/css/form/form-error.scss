@@ -1,0 +1,34 @@
+@import '../global/variables';
+
+.form-message {
+  bottom: 0;
+  clear: both;
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 12px;
+  margin-bottom: 10px;
+  overflow: hidden;
+  padding: 0 20px 0 15px;
+  position: absolute;
+
+  @media screen and (min-width: 768px){
+    font-size: 12px;
+    padding-left: 25px;
+  }
+
+  @media screen and (min-width: 1366px) {
+    padding-left: 30px;
+  }
+
+  &.success {
+    color: $black;
+  }
+
+  &.error {
+    color: $error;
+  }
+
+  &.tip {
+    color: $black;
+  }
+}
