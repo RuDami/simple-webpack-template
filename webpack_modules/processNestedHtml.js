@@ -27,10 +27,10 @@ function processNestedHtml(content, loaderContext, resourcePath = '') {
 
   const replaceNestedSrc = (parentFileDir) => (fullMatch, tag, filePath) => {
     const mainPath = path.resolve(parentFileDir, filePath)
-    console.log('mainPath', mainPath)
+    // console.log('mainPath', mainPath)
     const relativePathLoader = path.relative(loaderContext.context, mainPath)
-    console.log(`relativePathLoader`,  relativePathLoader)
-    console.log(`${tag}${relativePathLoader}"`)
+    // console.log(`relativePathLoader`,  relativePathLoader)
+    // console.log(`${tag}${relativePathLoader}"`)
     return `${tag}${relativePathLoader}"`;
   }
 
@@ -79,15 +79,14 @@ function processNestedHtml(content, loaderContext, resourcePath = '') {
   }
 
   if (!INCLUDE_PATTERN.test(content)) {
-    console.log('content', content)
+    // console.log('content', content)
     return content;
   }
   return content.replace(INCLUDE_PATTERN, replaceHtml);
 }
 
 function processHtmlLoader(content, loaderContext) {
-  const newContent = processNestedHtml(content, loaderContext);
-  return newContent;
+  return processNestedHtml(content, loaderContext);
 }
 
 module.exports = processHtmlLoader;

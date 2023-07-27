@@ -13,7 +13,6 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const glob = require('glob');
 const PreloadWebpackPlugin = require('@vue/preload-webpack-plugin');
 const posthtml = require("posthtml");
-const posthtmlWebp = require("posthtml-webp");
 const url = require("postcss-url")
 const processHtmlLoader = require("./webpack_modules/processNestedHtml");
 
